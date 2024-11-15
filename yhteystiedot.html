@@ -4,6 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+.big_img {
+    position: relative;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 75%;
+    height: 560px;
+    background-size:cover;
+    border-radius: 20px;
+    margin: 20px;
+    margin-bottom: 60px;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s ease; 
+}
+
+.big_img:hover {
+    background-size: 120%;
+}
+
+
+    </style>
 </head>
 <body>
     <header>
@@ -11,5 +35,10 @@
         <p>Meillä voi veneillä.</p>
         <p>Sijaitsemme Teiskossa.</p>
     </header>
+    <main>
+        <div class="big_img">
+            <img  src="book.jpg" alt="book">
+        </div>
+    </main>
 </body>
 </html>
